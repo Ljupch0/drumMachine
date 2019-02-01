@@ -7,14 +7,14 @@
   background-color: #6f7477;
   font-family: Helvetica;
   justify-content: space-evenly;
-  padding-top:45px;
+  padding-top:15px;
   border-radius: 3%;
   margin-top: 100px;
 }
 
 .button {
-  width: 26.6666%;
-  height: 26.6666%;
+  width: 23%;
+  height: 23%;
   background-color: #696969;
   border-radius: 7%;
 }
