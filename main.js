@@ -153,3 +153,227 @@ button13.addEventListener('mousedown', playBassDrum)
 button14.addEventListener('mousedown', playLowTom)
 button15.addEventListener('mousedown', playMidTom)
 button16.addEventListener('mousedown', playHighTom)
+
+
+
+// Execute a function when the user releases a key on the keyboard
+document.body.addEventListener("keydown", function(event) {
+ if (event.keyCode === 49) {
+    playCowbell();
+    press(button1);
+  }
+});
+
+document.body.addEventListener("keyup", function(event) {
+ if (event.keyCode === 49) {
+    unhighlight(button1);
+  }
+});
+
+
+document.body.addEventListener("keydown", function(event) {
+ if (event.keyCode === 50) {
+    playLowConga();
+    press(button2);
+  }
+});
+
+document.body.addEventListener("keyup", function(event) {
+ if (event.keyCode === 50) {
+    unhighlight(button2)
+  }
+});
+
+document.body.addEventListener("keydown", function(event) {
+ if (event.keyCode === 51) {
+    playMidConga();
+    press(button3);
+  }
+});
+
+document.body.addEventListener("keyup", function(event) {
+ if (event.keyCode === 51) {
+    unhighlight(button3);
+  }
+});
+
+
+document.body.addEventListener("keydown", function(event) {
+ if (event.keyCode === 52) {
+    playHighConga();
+    press(button4);
+  }
+});
+
+document.body.addEventListener("keyup", function(event) {
+ if (event.keyCode === 52) {
+    unhighlight(button4);
+  }
+});
+
+
+document.body.addEventListener("keydown", function(event) {
+ if (event.keyCode === 81) {
+    playMaracas();
+    press(button5);
+  }
+});
+
+
+document.body.addEventListener("keyup", function(event) {
+ if (event.keyCode === 81) {
+    unhighlight(button5);
+  }
+});
+
+document.body.addEventListener("keydown", function(event) {
+ if (event.keyCode === 87) {
+    playOpenHat();
+    press(button6);
+  }
+});
+
+document.body.addEventListener("keyup", function(event) {
+ if (event.keyCode === 87) {
+    unhighlight(button6);
+  }
+});
+
+
+document.body.addEventListener("keydown", function(event) {
+ if (event.keyCode === 69) {
+    playClosedHat();
+    press(button7);
+  }
+});
+
+document.body.addEventListener("keyup", function(event) {
+ if (event.keyCode === 69) {
+    unhighlight(button7);
+  }
+});
+
+
+document.body.addEventListener("keydown", function(event) {
+ if (event.keyCode === 82) {
+    playClaves();
+    press(button8);
+  }
+});
+
+document.body.addEventListener("keyup", function(event) {
+ if (event.keyCode === 82) {
+    unhighlight(button8);
+  }
+});
+
+
+document.body.addEventListener("keydown", function(event) {
+ if (event.keyCode === 65) {
+    playHandClap();
+    press(button9);
+  }
+});
+
+document.body.addEventListener("keyup", function(event) {
+ if (event.keyCode === 65) {
+  unhighlight(button9);
+  }
+});
+
+document.body.addEventListener("keydown", function(event) {
+ if (event.keyCode === 83) {
+    playSnare();
+    press(button10);
+  }
+});
+
+document.body.addEventListener("keyup", function(event) {
+ if (event.keyCode === 83) {
+    unhighlight(button10);
+  }
+});
+
+document.body.addEventListener("keydown", function(event) {
+ if (event.keyCode === 68) {
+    playCymbal();
+    press(button11);
+  }
+});
+
+document.body.addEventListener("keyup", function(event) {
+ if (event.keyCode === 68) {
+    unhighlight(button11);
+  }
+});
+
+
+document.body.addEventListener("keydown", function(event) {
+ if (event.keyCode === 70) {
+    playRimshot();
+    press(button12);
+  }
+});
+
+document.body.addEventListener("keyup", function(event) {
+ if (event.keyCode === 70) {
+    unhighlight(button12);
+  }
+});
+
+
+document.body.addEventListener("keydown", function(event) {
+ if (event.keyCode === 90) {
+    playBassDrum();
+    press(button13);
+  }
+});
+
+
+document.body.addEventListener("keyup", function(event) {
+ if (event.keyCode === 90) {
+    unhighlight(button13);
+  }
+});
+
+
+document.body.addEventListener("keydown", function(event) {
+ if (event.keyCode === 88) {
+    playLowTom();
+    press(button14);
+  }
+});
+
+document.body.addEventListener("keyup", function(event) {
+ if (event.keyCode === 88) {
+    unhighlight(button14);
+  }
+});
+
+
+document.body.addEventListener("keydown", function(event) {
+ if (event.keyCode === 67) {
+    playMidTom();
+    press(button15);
+  }
+});
+
+document.body.addEventListener("keyup", function(event) {
+ if (event.keyCode === 67) {
+    unhighlight(button15);
+  }
+});
+
+
+document.body.addEventListener("keydown", function(event) {
+ if (event.keyCode === 86) {
+    playHighTom();
+    press(button16);
+  }
+});
+
+document.body.addEventListener("keyup", function(event) {
+ if (event.keyCode === 86) {
+    unhighlight(button16);
+  }
+});
