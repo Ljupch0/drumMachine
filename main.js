@@ -13,49 +13,49 @@ function press (btn) {
 }
 
 const bassDrum = new Audio('TR808all/TR808WAV/BD/BD0000.wav');
-bassDrum.preload = "auto";
+//bassDrum.preload = "auto";
 const playBassDrum = () => {
   bassDrum.cloneNode(true).play()
 }
 
 const snare = new Audio('TR808all/TR808WAV/SD/SD2510.wav')
-snare.preload = "auto";
+//snare.preload = "auto";
 const playSnare = () => {
   snare.cloneNode(true).play()
 }
 
 const lowTom = new Audio('TR808all/TR808WAV/LT/LT00.wav')
-lowTom.preload = "auto";
+//lowTom.preload = "auto";
 const playLowTom = () => {
   lowTom.cloneNode(true).play()
 }
 
 const midTom = new Audio('TR808all/TR808WAV/MT/MT25.wav')
-midTom.preload = "auto";
+//midTom.preload = "auto";
 const playMidTom = () => {
   midTom.cloneNode(true).play()
 }
 
 const highTom = new Audio('TR808all/TR808WAV/HT/HT25.wav')
-highTom.preload = "auto";
+//highTom.preload = "auto";
 const playHighTom = () => {
   highTom.cloneNode(true).play()
 }
 
 const lowConga = new Audio('TR808all/TR808WAV/LC/LC00.wav')
-lowConga.preload = "auto";
+//lowConga.preload = "auto";
 const playLowConga = () => {
   lowConga.cloneNode(true).play()
 }
 
 const midConga = new Audio('TR808all/TR808WAV/MC/MC25.wav')
-midConga.preload = "auto";
+//midConga.preload = "auto";
 const playMidConga = () => {
   midConga.cloneNode(true).play()
 }
 
 const highConga = new Audio('TR808all/TR808WAV/HC/HC10.wav')
-highConga.preload = "auto";
+//highConga.preload = "auto";
 const playHighConga = () => {
   highConga.cloneNode(true).play()
 }
