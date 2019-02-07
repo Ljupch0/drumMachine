@@ -13,81 +13,97 @@ function press (btn) {
 }
 
 const bassDrum = new Audio('TR808all/TR808WAV/BD/BD0000.wav');
+bassDrum.preload = "auto";
 const playBassDrum = () => {
   bassDrum.cloneNode(true).play()
 }
 
 const snare = new Audio('TR808all/TR808WAV/SD/SD2510.wav')
+snare.preload = "auto";
 const playSnare = () => {
   snare.cloneNode(true).play()
 }
 
 const lowTom = new Audio('TR808all/TR808WAV/LT/LT00.wav')
+lowTom.preload = "auto";
 const playLowTom = () => {
   lowTom.cloneNode(true).play()
 }
 
 const midTom = new Audio('TR808all/TR808WAV/MT/MT25.wav')
+midTom.preload = "auto";
 const playMidTom = () => {
   midTom.cloneNode(true).play()
 }
 
 const highTom = new Audio('TR808all/TR808WAV/HT/HT25.wav')
+highTom.preload = "auto";
 const playHighTom = () => {
   highTom.cloneNode(true).play()
 }
 
 const lowConga = new Audio('TR808all/TR808WAV/LC/LC00.wav')
+lowConga.preload = "auto";
 const playLowConga = () => {
   lowConga.cloneNode(true).play()
 }
 
 const midConga = new Audio('TR808all/TR808WAV/MC/MC25.wav')
+midConga.preload = "auto";
 const playMidConga = () => {
   midConga.cloneNode(true).play()
 }
 
 const highConga = new Audio('TR808all/TR808WAV/HC/HC10.wav')
+highConga.preload = "auto";
 const playHighConga = () => {
   highConga.cloneNode(true).play()
 }
 
 const rimshot = new Audio('TR808all/TR808WAV/RS/RS.wav')
+rimshot.preload = "auto";
 const playRimshot = () => {
   rimshot.cloneNode(true).play()
 }
 
 const claves = new Audio('TR808all/TR808WAV/CL/CL.wav')
+claves.preload = "auto";
 const playClaves = () => {
   claves.cloneNode(true).play()
 }
 
 const handClap = new Audio('TR808all/TR808WAV/CP/CP.wav')
+handClap.preload = "auto";
 const playHandClap = () => {
   handClap.cloneNode(true).play()
 }
 
 const maracas = new Audio('TR808all/TR808WAV/MA/MA.wav')
+maracas.preload = "auto";
 const playMaracas = () => {
   maracas.cloneNode(true).play()
 }
 
 const cowbell = new Audio('TR808all/TR808WAV/CB/CB.wav')
+cowbell.preload = "auto";
 const playCowbell = () => {
   cowbell.cloneNode(true).play()
 }
 
 const cymbal = new Audio('TR808all/TR808WAV/CY/CY2525.wav')
+cymbal.preload = "auto";
 const playCymbal = () => {
   cymbal.cloneNode(true).play()
 }
 
 const openHat = new Audio('TR808all/TR808WAV/OH/OH50.wav')
+openHat.preload = "auto";
 const playOpenHat = () => {
   openHat.cloneNode(true).play()
 }
 
 const closedHat = new Audio('TR808all/TR808WAV/CH/CH.wav')
+closedHat.preload = "auto";
 const playClosedHat = () => {
   closedHat.cloneNode(true).play()
 }
@@ -377,33 +393,3 @@ document.body.addEventListener("keyup", function(event) {
     unhighlight(button16);
   }
 });
-
-
-var ns = 5; //The number of sounds to preload. This depends on how often the sounds need to be played, but if too big it will probably cause lond loading times.
-var sounds = []; //This will be a matrix of all the sounds
-
-for (i = 0; i < ns; i ++) //We need to have ns different copies of each sound, hence:
-    sounds.push([]);
-
-for (i = 0; i < soundSources.length; i ++)
-    for (j = 0; j < ns; j ++)
-        sounds[j].push(new Audio(sources[i])); //Assuming that you hold your sound sauces in a "sources" array, for example ["bla.wav", "smile.dog" "scream.wav"]
-
-var playing = []; //This will be our play index, so we know which version has been played the last.
-
-for (i = 0; i < soundSources.length; i ++)
-    playing[i] = 0;
-
-playSound = function(id, vol) //id in the sounds[i] array., vol is a real number in the [0, 1] interval
-{
-    if (vol <= 1 && vol >= 0)
-        sounds[playing[id]][id].volume = vol;
-    else
-        sounds[playing[id]][id].volume = 1;
-
-    sounds[playing[id]][id].play();
-    ++ playing[id]; //Each time a sound is played, increment this so the next time that sound needs to be played, we play a different version of it,
-
-    if (playing[id] >= ns)
-        playing[id] = 0;
-}
