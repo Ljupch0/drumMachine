@@ -1,6 +1,6 @@
 #machine {
   display: flex;
-  margin:auto;
+  margin: auto;
   flex-wrap: wrap;
   width: 700px;
   height: 700px;
@@ -9,7 +9,7 @@
   justify-content: space-evenly;
   padding-top:14px;
   border-radius: 3%;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .button {
@@ -21,4 +21,19 @@
 
 body {
   background-color: #b6b3ae;
+}
+
+
+p {
+  font-family: Helvetica, sans-serif;
+  color: #696969;
+  margin-bottom: 50px;
+  font-size: 16px;
+  cursor: help;
+  display: inline-block;
+}
+
+div.minWidth {
+  display: flex;
+  justify-content: center;
 }

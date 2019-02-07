@@ -393,3 +393,10 @@ document.body.addEventListener("keyup", function(event) {
     unhighlight(button16);
   }
 });
+
+
+const whatThis = document.getElementById('whatThis');
+
+whatThis.onclick = function() {
+  window.alert("drumMachine mimics in design the Akai MPC2000 sampler, while it contains opinionated samples of the Roland TR-808 beat machine in lossless wav format. Playing the machine is best done using the keys w, e, s, d, and their neighbors. For feature requests drop me a line on twitter @LjNaumov.");
+};
